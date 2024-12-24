@@ -13,17 +13,18 @@
       <nav>
         <div class="navbar">
           <div class="navbar__logo">
-            <figure class="nav__logo--wrapper">
+            <a href="https://treact.owaiskhan.me/" class="nav__logolink"><figure class="nav__logo--wrapper">
               <img src="logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="" class="nav__logo">
             </figure>
-            <h2 class="nav__logo--title">Treact</h2>
+          </a> 
+            <a href="https://treact.owaiskhan.me/" class="nav__logotitle"><h2 class="nav__logo--title">Treact</h2></a>
           </div>
             <ul class="navbar__list">
-              <li>About</li>
-              <li>Blog</li>
-              <li>Pricing</li>
-              <li>Contact Us</li>
-              <li>Login</li>
+              <li><a href="#sectionfeatures" class="nav__anch">About</a></li>
+              <li><a href="#sectiontestimonials" class="nav__anch">Blog</a></li>
+              <li><a href="#sectionpricing" class="nav__anch">Pricing</a></li>
+              <li><a href="#sectionlast" class="nav__anch">Contact Us</a></li>
+              <li><a href="#" class="nav__anch">Login</a></li>
               <li><button class="btn--signup">Sign Up</button></li>
             </ul>
         </div>
@@ -44,7 +45,10 @@
                 Our templates are easy to setup, understand and customize. Fully
                 modular components with a variety of pages and components.
               </p>
-              <input type="email" placeholder="Your E-mail Address" class="emailbox"/>
+              <div class="email__wrapper">
+                <input type="email" placeholder="Your E-mail Address" class="emailbox"/>
+                <button class="email__button">Get Started</button>
+              </div>
               <div class="landing__footer--wrapper">
                 <p class="landing__subpara">
                   OUR TRUSTED CUSTOMERS
@@ -67,7 +71,7 @@
       </section>
 
       <!-- Features -->
-      <section>
+      <section id="sectionfeatures">
         <div class="container">
           <div class="features__row">
               <h5 class="text--purple features__heading">FEATURES</h5>
@@ -292,7 +296,7 @@
       </section>
 
       <!-- Pricing -->
-      <section>
+      <section id="sectionpricing">
         <div class="container">
           <div class="row">
             <div class="pricing--details">
@@ -305,7 +309,7 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <div class="pricing__wrapper">
-                <div class="pricing__feature">
+                <div class="pricing__feature pricing__feature1">
                   <div class="pricing__div1">
                     <h3 class="pricing__h3">PERSONAL</h3>
                     <h1 class="pricing__h1">$17.99</h1>
@@ -323,7 +327,7 @@
                   </div>
                 </div>
                 <div class="pricing__feature pricing__feature--odd">
-                  <div class="pricing__div1--odd">
+                  <div class="pricing__div2--odd">
                     <h3 class="pricing__h3">PERSONAL</h3>
                     <h1 class="pricing__h1">$17.99</h1>
                     <h5 class="pricing__h5--diff">MONTHLY</h5>
@@ -339,7 +343,7 @@
                     <button class="pricing__button2">Buy Now</button>
                   </div>
                 </div>
-                <div class="pricing__feature">
+                <div class="pricing__feature pricing__feature3">
                   <div class="pricing__div1">
                     <h3 class="pricing__h3">PERSONAL</h3>
                     <h1 class="pricing__h1">$17.99</h1>
@@ -362,7 +366,7 @@
       </section>
 
       <!-- Testimonials -->
-      <section>
+      <section id="sectiontestimonials">
         <div class="container">
           <div class="row">
             <figure class="testimonials__image--wrapper">
@@ -442,7 +446,7 @@
       </section>
 
       <!-- LASTSECTION -->
-      <section>
+      <section id="sectionlast">
         <div class="container">
           <div class="row lastsection__box">
             <div class="lastsection__details">
@@ -466,10 +470,10 @@
                     <h5>MAIN</h5>
                   </div>
                     <ul class="footer__details--listitem">
-                      <li>Blog</li>
-                      <li>FAQs</li>
-                      <li>Support</li>
-                      <li>About Us</li>
+                      <li><span>Blog</span></li>
+                      <li><span>FAQs</span></li>
+                      <li><span>Support</span></li>
+                      <li><span>About Us</span></li>
                     </ul>
                 </div>
                 <div class="footer__details">
@@ -477,10 +481,10 @@
                     <h5>PRODUCT</h5>
                   </div>
                     <ul class="footer__details--listitem">
-                      <li>Login</li>
-                      <li>Personal</li>
-                      <li>Business</li>
-                      <li>Team</li>
+                      <li><span>LogIn</span></li>
+                      <li><span>Personal</span></li>
+                      <li><span>Business</span></li>
+                      <li><span>team</span></li>
                     </ul>
                 </div>
                 <div class="footer__details">
@@ -488,10 +492,10 @@
                     <h5>PRESS</h5>
                   </div>
                     <ul class="footer__details--listitem">
-                      <li>Logos</li>
-                      <li>Events</li>
-                      <li>Stories</li>
-                      <li>Office</li>
+                      <li><span>Logos</span></li>
+                      <li><span>Events</span></li>
+                      <li><span>Stories</span></li>
+                      <li><span>Office</span></li>
                     </ul>
                 </div>
                 <div class="footer__details">
@@ -499,10 +503,10 @@
                     <h5>TEAM</h5>
                   </div>
                     <ul class="footer__details--listitem">
-                      <li>Career</li>
-                      <li>Founders</li>
-                      <li>Culture</li>
-                      <li>Onboarding</li>
+                      <li><span>Careers</span></li>
+                      <li><span>Founders</span></li>
+                      <li><span>Culture</span></li>
+                      <li><span>Onboarding</span></li>
                     </ul>
                 </div>
                 <div class="footer__details">
@@ -510,10 +514,10 @@
                     <h5>LEGAL</h5>
                   </div>
                     <ul class="footer__details--listitem">
-                      <li>GPPR</li>
-                      <li>Privacy Policy</li>
-                      <li>Terms of Service</li>
-                      <li>Disclaimer</li>
+                      <li><span>GPDR</span></li>
+                      <li><span>Privacy Policy</span></li>
+                      <li><span>Terms of Service</span></li>
+                      <li><span>Disclaimer</span></li>
                     </ul>
                 </div>
             </div>

@@ -17,6 +17,11 @@ ul {
     list-style: none;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .container  {
     padding: 80px 0;
 }
@@ -54,7 +59,7 @@ nav {
 }
 
 .nav__logo--wrapper {
-  width: 12%;
+  width: 100%;
 }
 
 .nav__logo{
@@ -73,7 +78,38 @@ nav {
     align-items: center;
     justify-content: space-between;
     font-weight: 600;
+    transition: all 500ms ease;
 }
+
+.nav__anch {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 2px solid rgb(100, 21, 255, 0);
+    transition: all 300ms ease;
+}
+
+.nav__anch:hover {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 2px solid rgb(100, 21, 255);
+    color: rgb(100 21 255);
+}
+
+.nav__logotitle {
+    text-decoration: none;
+    color: black;
+    transition: all 300ms ease;
+}
+
+.nav__logotitle:hover {
+    text-decoration: none;
+    color: rgb(100, 21, 255);
+}
+
+.nav__logolink {
+    width: 10%;
+}
+
 
 .btn--signup {
     background-color: rgb(100 21 255);
@@ -83,6 +119,12 @@ nav {
     font-weight: 600;
     font-size: 16px;
     border: rgb(100 21 255);
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.btn--signup:hover {
+    background-color: rgb(37, 46, 212);
 }
 
 /* HEADER */
@@ -156,15 +198,44 @@ nav {
     padding: 30px 0px;
 }
 
+.email__wrapper {
+    position: relative;
+}
+
 .emailbox {
     width: 100%;
     max-width: 420px;
-    padding: 20px 0px 20px 30px;
+    padding: 20px 40% 20px 30px;
     margin-bottom: 15%;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 18px;
     opacity: 0.5;
     border: 2px solid rgb(208, 206, 211);
+    transition: all 300ms ease;
+}
+
+.emailbox:hover {
+    border: 2px solid rgb(78, 76, 79);
+}
+
+.email__button{
+    position: absolute;
+    top: 6%;
+    right: 14%;
+    background-color: rgb(100 21 255);
+    padding: 15px 0px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    width: 30%;
+    border: rgb(100 21 255);
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.email__button:hover {
+    background-color: rgb(37, 46, 212);
 }
 
 .landing__subpara {
@@ -293,7 +364,14 @@ nav {
     font-size: 16px;
     border: rgb(100 21 255);
     max-width: 140px;
+    cursor: pointer;
+    transition: all 300ms ease;
 }
+
+.quality__button:hover {
+    background-color: rgb(37, 46, 212);
+}
+
 
 .quality__image--wrapper {
     width: 50%;
@@ -345,7 +423,7 @@ nav {
 }
 
 .steps__list--number {
-    opacity: 0.5;
+    opacity: 0.3;
     font-size: 32px;
     margin-top: -4px;
 }
@@ -404,7 +482,14 @@ nav {
     font-size: 16px;
     border: rgb(100 21 255);
     max-width: 140px;
+    cursor: pointer;
+    transition: all 300ms ease;
 }
+
+.values__button:hover {
+    background-color: rgb(37, 46, 212);
+}
+
 
 .values__value {
     margin-right: 25px;
@@ -500,6 +585,14 @@ nav {
     border-bottom-right-radius: 10px;
 }
 
+.pricing__feature1 {
+    background: linear-gradient(to bottom, rgb(62, 230, 235) 1%, transparent 2%);    
+}
+
+.pricing__feature3 {
+    background: linear-gradient(to bottom, rgb(240, 127, 131) 1%, transparent 2%);
+}
+
 .pricing__feature--odd {
     background-color: rgb(82, 105, 196);
     color: white;
@@ -536,7 +629,7 @@ nav {
     justify-content: space-around;
 }
 
-.pricing__div1--odd {
+.pricing__div2--odd {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 300px;
@@ -605,7 +698,28 @@ nav {
     border: rgb(100 21 255);
     width: 100%;
     max-width: 200px;
+    cursor: pointer;
+    transition: all 300ms ease;
 }
+
+.pricing__button1:hover {
+    background-color: rgb(46, 218, 120);
+    transform: translateY(2px);
+    box-shadow: -5px 5px 10px rgb(195, 194, 196);
+}
+
+.pricing__button2:hover {
+    background-color: rgb(210, 210, 211);
+    transform: translateY(2px);
+    box-shadow: -2px 2px 10px rgb(116, 115, 116);
+}
+
+.pricing__button3:hover {
+    background-color: rgb(223, 46, 60);
+    transform: translateY(2px);
+    box-shadow: -5px 5px 10px rgb(195, 194, 196);
+}
+
 
 .pricing__button1 {
     background-color: rgb(44, 218, 192);
@@ -762,6 +876,17 @@ nav {
     border: rgb(100 21 255);
     width: 100%;
     max-width: 175px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.lastsection__button1:hover {
+    background-color: rgb(191, 38, 51);
+}
+
+.lastsection__button2:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(100, 21, 255);
 }
 
 .lastsection__button2 {
@@ -807,6 +932,13 @@ footer {
     line-height: 2;
 }
 
+li span { 
+    display: inline-block;
+    border-bottom: 2px solid rgb(100, 21, 255);
+    transition: all 300ms ease;
+    height: 30px;
+}
+
 .footer__lowersection {
     width: 100%;
     max-width: 1200px;
@@ -844,12 +976,22 @@ footer {
 
 .footer__lowersection--para {
     color: white;
+    opacity: 0.7;
 }
 
 .footer__lowersection--logos {
-    width: 40px;
+    width: 30px;
     background-color: white;
-    padding: 10px;
+    padding: 7px;
     border-radius: 50px;
     margin-left: 10px;
+    transition: all 300ms ease;
+}
+
+.footer__lowersection--logos:hover {
+    background-color: rgb(201, 199, 199);
+}
+
+li span:hover {
+    border-bottom: 2px solid #fff;
 }
