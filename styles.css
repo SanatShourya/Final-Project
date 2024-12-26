@@ -788,8 +788,11 @@ nav {
 }
 
 .testimonial__reviews--wrapper {
+    width: 100%;
+    max-width: 550px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .testimonials__reviewer--wrapper {
@@ -811,6 +814,32 @@ nav {
     font-size: 16px;
 }
 
+.testimonials__button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.testimonials__navigate {
+    display: flex;
+    position: absolute;
+    right: 10px;
+}
+
+.testimonials__arrow--img {
+    width: 45px;
+    padding: 10px;
+    background-color: rgb(238, 242, 247);
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.testimonials__arrow--img1 {
+    border-right: 1px solid rgb(234, 234, 234);
+    padding-right: 20px;
+}
 
 /* FAQS */ 
 
@@ -838,6 +867,15 @@ nav {
     margin-bottom: 20px;
     border-radius: 10px;
     background-color: rgb(230, 230, 236);
+    position: relative;
+}
+
+.faqs__faq--arrow {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    transform: rotate(90deg);
+    font-stretch: ultra-expanded;
 }
 
 
