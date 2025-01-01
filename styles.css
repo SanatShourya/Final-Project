@@ -38,6 +38,10 @@ nav {
   height: 125px;
 }
 
+.navbar {
+    position: relative;
+}
+
 .navbar,
 .row {
   display: flex;
@@ -107,6 +111,23 @@ nav {
 
 .nav__logolink {
   width: 10%;
+}
+
+.nav__hamburger {
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.nav__cross {
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.nav__collapsediv {
+    position: absolute;
+    display: none;
 }
 
 .btn--signup {
@@ -823,7 +844,7 @@ nav {
 
 .testimonials__arrow--img1 {
   border-right: 1px solid rgb(234, 234, 234);
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 /* FAQS */
@@ -1026,6 +1047,7 @@ li span:hover {
 @media (max-width: 768px) {
     .navbar {
         width: 90%;
+        height: 60px;
     }
 
     .nav__logotitle {
@@ -1034,6 +1056,85 @@ li span:hover {
 
     .navbar__list{
         display: none;
+    }
+
+    .nav__hamburger {
+        display: block;
+        width: 25px;
+        cursor: pointer;
+    }
+
+    .nav__cross {
+        display: block;
+        width: 25px;
+        cursor: pointer;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 50ms ease-in ;
+    }
+
+    .nav__collapsediv {
+        width: 104%;
+        display: flex;
+        opacity: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: -2%;
+        background-color: #fff;
+        border: 1px solid rgb(214, 213, 213);
+        z-index: -1;
+        border-radius: 10px;
+        margin: 0 auto;
+        animation: fly--out 300ms ease;
+        transition: opacity 300ms ease;
+    }
+
+    .show__div {
+        opacity: 1;
+        z-index: 2;
+        animation: fly--in 300ms ease;
+    }
+
+    @keyframes fly--in {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes fly--out {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    .show__cross {
+        opacity: 1;
+        z-index: 3;
+    }
+
+    .nav__collapseanchor {
+        margin: 10px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .nav__collapseanchor1 {
+        margin-top: 40px;
+    }
+
+    .nav__collapseanchor6 {
+        margin-top: 10px;
+        margin-bottom: 50px;
     }
 
     .row {
@@ -1409,6 +1510,25 @@ li span:hover {
 
     .nav__logolink {
         width: 12%;
+    }
+
+    .nav__collapsediv {
+        width: 108%;
+        left: -4%;
+    }
+
+    .nav__collapseanchor {
+        margin: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .nav__collapseanchor1 {
+        margin-top: 30px;
+    }
+
+    .nav__collapseanchor6 {
+        margin-bottom: 40px;
     }
 
     .login--details {
