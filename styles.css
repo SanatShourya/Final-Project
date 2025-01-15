@@ -230,7 +230,13 @@ nav {
 }
 
 .emailbox:hover {
-  border: 2px solid rgb(78, 76, 79);
+  border: 2px solid rgb(78, 78, 78);
+  outline: none;
+}
+
+.emailbox:focus {
+  border: 2px solid #6415ff;
+  outline: none;
 }
 
 .email__button {
